@@ -16,10 +16,10 @@ def do_the_thing(path):
     temp = data.temp.values
     lp_m = -415.83
     lp_b = 4094.8
-    lp1 = (lp1 - lp_b)/lp_m
-    lp2 = (lp2 - lp_b) / lp_m
-    lp3 = (lp3 - lp_b) / lp_m
-    lp4 = (lp4 - lp_b) / lp_m
+    lp1 = .00238*lp1 + 1.63
+    lp2 = -.00241*lp2 + 11.4
+    lp3 = .00239*lp3 + 1.58
+    lp4 = .0024*lp4 + 1.45
     plt.plot(time, lp1, label = 'LP1')
     plt.plot(time, lp2, label = 'LP2')
     plt.plot(time, lp3, label = 'LP3')
